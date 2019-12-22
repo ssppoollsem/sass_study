@@ -1,0 +1,83 @@
+// nesting
+
+
+// mixin
+@import "mixins";
+
+// extend
+%boxShape {
+    border-radius: 20px;
+    border: 3px solid #f00;
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+// partial
+
+html {
+    font-size: 18px; 
+}
+  
+body {
+    margin: 20px;
+    background-color: #fff4ef;
+}
+
+div {
+    color: #333;
+    padding: 20px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#box1 {
+    @include fontSizeBgColor(40px,#ffcccc);
+    @extend %boxShape;
+
+    &:hover {
+        background-color: #ccc;
+    }
+    
+    &,&-title {
+
+    }
+
+    // #box1-title (box1이 동일하므로 &로 대체할 수 있음
+    &-title {
+        font-style:italic;
+        text-decoration:underline;
+    }
+
+    & > a {
+        color: #a22;
+        text-decoration: none;
+        &:hover{
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+
+    #box2 {
+        @include fontSizeBgColor();
+        
+        @extend %boxShape;
+
+        & > a {
+            color: #ee6633;
+            text-decoration: none;
+
+            &:hover {
+                color: #a22;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    #box1 {
+        font-size:14px
+    }
+}

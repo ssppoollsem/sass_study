@@ -1,0 +1,6 @@
+
+//mixin
+@mixin fontSizeBgColor($fontSize:30px, $bgColor:#e9e9e9) {
+    font-size: $fontSize;
+    background-color: $bgColor;
+}

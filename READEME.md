@@ -1,21 +1,14 @@
-# 자바스크립트룰 통한 웹 프론트엔드 AR
+# SASS
 
-## 불편하고 반복적인 생각이 들때 뭐라도 만들자
-내가 아는 선에서 할 수 있는 걸로 먼가 만들어보자!
-### 크롬 익스텐션 개발기
-- https://github.com/yakuyaku
-- https://oog.co.kr
-- yakuyaku@gmail.com
+## CSS 작성(생성)을 위한 작고 가벼운 언어이고, Sass와 SCSS가 있다.
 
-### 야쿠 북마커 소개
-- https://github.com/yakuyaku/yakubookmaker
+### Sass
+SCSS와 작성하는데 있어서 구조적 차이가 있고 작성이 번거롭고 복잡할 수 있다.
 
-### 크롬 확장 프로그램 만들기 (MainFest)
-- page Script (Browser Action)
-    - Options Page (Options.html)
-- Background Script (Message Checking)
-- Content Script (Auto Login)
-- Permissions (tabs, storage)
+### SCSS
+기존에 알던 CSS와 유사하게 작성할 수 있기 때문에 친근하게 느껴져 배우기가 쉽다.
 
 
-## 두번째 
+## Nesting
+
+### 트리 구조

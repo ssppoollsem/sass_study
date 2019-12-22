@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,CAAA;EAAC,gBAAgB,EADP,IAAI;CACiB",
+    "sources": [
+        "../sass/tset.scss"
+    ],
+    "names": [],
+    "file": "tset.css"
+}
